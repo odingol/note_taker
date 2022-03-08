@@ -34,7 +34,7 @@ This app is designed to create an application called Note Taker that be used to 
 <br><br>
     
 ## License 
-[![License: ISC](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/ISC)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
     
     
 The license included for this project is under ISC
