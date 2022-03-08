@@ -4,7 +4,7 @@
 ```md
 AS A developer 
 I WANT to create an application that saves notes for users
-SO THAT users can organize their thoughts and keep tracks of tasks they need to complete
+SO THAT users can organize their thoughts and keep track of the tasks they need to complete
 ```
     
 ## Table of Contents
