@@ -61,6 +61,18 @@ app.post('/api/notes', (req, res) => {
   res.json(freshNote);
 });
 
+
+app.delete('/api/notes/:id', (req, res) => {
+  const readNote = fs.readFileSync("./db/db.json");
+  const parsedNote = JSON.parse(readNote);
+
+  if(parsedNote.some(note => note.id === parseInt(req.params.id))) {
+    res.json({mssg: 'Note has been removed', Notes: parsedNote.filter(note => note.id !== parseInt(req.params.id))});
+  }
+});
+
+
+
 app.listen(PORT, () => {
     console.log(`App is running at http://localhost:${PORT}`);
   });
