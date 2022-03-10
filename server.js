@@ -17,15 +17,17 @@ app.use(express.static("public"));
 
 // HTML Routes
 
-app.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'notes.html'));
-});
-
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+app.get('/notes', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'notes.html'));
+});
+
+
 // Part of REQUIREMENT!!! does not get the route for the db.json file for some reason 
+
 // app.get('*', (req, res) => {
 //   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 // });
@@ -55,7 +57,7 @@ app.post('/api/notes', (req, res) => {
 
   parsedNote.push(freshNote);
 
-  fs.writeFileSync('./db/db.json', JSON.stringify(parsedNote));
+  fs.writeFileSync("./db/db.json", JSON.stringify(parsedNote));
   res.json(freshNote);
 });
 
