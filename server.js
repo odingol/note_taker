@@ -38,22 +38,19 @@ app.get('/api/notes', (req, res) => {
 app.post('/api/notes', (req, res) => {
 
   const freshNote = {
-    id: uuid,
+    id: uuid.v4(),
     title: req.body.title,
     text: req.body.text
   };
 
-  const readNote = fs.readFile(path.join(__dirname, "/db/db.json"), (err) => {
-    if(err) {
-      console.log(err);
-    };
-  });
+  const readNote = fs.readFileSync("./db/db.json");
 
   const parsedNote = JSON.parse(readNote);
 
   parsedNote.push(freshNote);
 
-  fs.writeFile(path.join('/db/db.json'), JSON.stringify(freshNote));
+  fs.writeFileSync(path.join('./db/db.json'), JSON.stringify(parsedNote));
+  res.json(freshNote);
 
 });
 
