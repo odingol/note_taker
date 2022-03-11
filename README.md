@@ -29,14 +29,14 @@ SO THAT users can organize their thoughts and keep track of the tasks they need 
 npm install
 ```
 
-3) Once step 2 is completed, copy the code "node index.js" and paste inside the terminal to begin answering the prompt questions for the README set up
+3) Once step 2 is completed, copy the code "node server.js" and paste inside the terminal to begin answering the prompt questions for the README set up
 
 ```bash
 node server.js
 ```    
 
 
-Click this URL to deploy the application:
+Click this button to deploy the application:
 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://note-taker0-0.herokuapp.com/)
@@ -45,7 +45,7 @@ Click this URL to deploy the application:
     
  ## Usage
     
-This app is designed to create an application called Note Taker that be used to write and save notes. This application utilizes Express.js as the back end software to save and retrieve note data from a JSON file.
+This app is designed to create an application called "Note Taker" that can be used to write and save notes. This application utilizes Express.js as the back end software to save and retrieve note data from a JSON file.
 
 <br>Here is the application's functionality:
 
