@@ -16,10 +16,30 @@ SO THAT users can organize their thoughts and keep track of the tasks they need 
 - [Questions](#questions)
     
 ## Installation
-    
+
+1) Go to my Github and clone this repo
+
+![Git Clone Navigation](./images/git-nav-clone.png)
+
+<br>
+
+2) Once downloaded, copy the code "npm install" and paste inside the terminal of your code editor
+
+```bash
+npm install
+```
+
+3) Once step 2 is completed, copy the code "node index.js" and paste inside the terminal to begin answering the prompt questions for the README set up
+
+```bash
+node server.js
+```    
+
+
 Click this URL to deploy the application:
 
-[Note Taker Application]()
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://note-taker0-0.herokuapp.com/)
 <br>
 <br>
     
@@ -29,7 +49,7 @@ This app is designed to create an application called Note Taker that be used to 
 
 <br>Here is the application's functionality:
 
-![Note Taker Demo]() 
+![Note Taker Demo](./images/note-taker-demo.gif) 
 
 <br><br>
     
